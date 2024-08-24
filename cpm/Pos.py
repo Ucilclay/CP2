@@ -72,24 +72,6 @@ def GetPlayerRecords():
         return resss
     
 
-def defsavewallet(data):
-    url = f"https://{Vhost}/SaveWalletData4"
-    headers = {
-        "Host": Vhost,
-        "authorization": f'Bearer {Vdata["idToken"]}',
-        "firebase-instance-id-token": Vdata["firebase-instance-id-token"],
-        "content-type": "application/json; chatset=utf-8",
-        "accept-encoding": "gzip",
-        "User-Agent": f"Dalvik/2.1.0 (Linux; U; Android 8.1.0; ASUS_X00TD MIUI/16.2017.2009.087-20{rdm.randint(111111, 999999)})"
-    }
-    data = {"data": Vdata["data"]}
-
-    response = requests.post(url, json=payload, headers=headers)
-
-    if response.status_code == 200:
-        return response.json()
-    else:
-        return {"error": response.status_code, "message": response.text}
 
 # Example usage
 wallet_data = "{\"Money\":49995000}"
