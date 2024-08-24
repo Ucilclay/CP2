@@ -109,7 +109,7 @@ def upload_to_github(folder_name, github_repo_url):
 
 # Contoh penggunaan:
 folder_name = 'player/cars'
-github_repo_url = 'https://github.com/MakerDell/VVIP22/repo.git'
+github_repo_url = 'https://github.com/Ucilclay/CP2.git'
 
 
 
