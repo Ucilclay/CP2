@@ -240,7 +240,7 @@ def TestGetOneCarFromWorldSale(ownerAccountID, carid, wsvalue):
         "content-type": "application/json; chatset=utf-8",
         "accept-encoding": "gzip",
         "User-Agent": f"Dalvik/2.1.0 (Linux; U; Android 8.1.0; ASUS_X00TD MIUI/16.2017.2009.087-20{rdm.randint(111111, 999999)})"
-    }
+    
     data = json.dumps(
         {"data": [str(ownerAccountID), str(carid), str(wsvalue)]})
     print(data)
